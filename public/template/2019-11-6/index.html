@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/a.css">
+  <script src="./js/ajax.js"></script>
+  <script src="./js/socket.io.js"></script>
+  <script>
+    // var socket = io('http://localhost:3000/');
+
+    // //客户端订阅
+    // socket.on('mess_type',(data)=>{
+    //   console.log('首页_客户端收到',data)
+    //   //dom 操作
+    // })
+    
+  </script>
+</head>
+<body>
+  
+  index.html
+  
+  <img src="/upload/noimage.png" alt="">
+
+  <script>
+    /* ajax({
+      url:'http://v.juhe.cn/toutiao/index?type=&key=55f8053eba54dab5a301a00f45523164',
+      data:{
+      },
+      success:function(res){
+        console.log('前端123',res)
+      }
+    }) */
+
+    ajax({
+      url:'/proxy/juhe',
+      // data:{start:1,count:1},
+      success:function(res){
+        console.log('前端juhe',res)
+      }
+    })
+  </script>
+</body>
+</html>
